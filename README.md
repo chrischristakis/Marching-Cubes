@@ -8,7 +8,7 @@
 The marching Cubes algorithm simulates an isosurface within a scalar field. In other words, it acts to approximate a surface where points in some 
 domain are above a certain value.
     
-    To run, see the attached folder "bin" which contains the <code>marching_cubes.exe</code> file. If you have OpenGL and VC++, it should work.
+To run, see the attached folder "bin" which contains the <code>marching_cubes.exe</code> file. If you have OpenGL and VC++, it should work.
 
 This program was written in C++ and OpenGL, and features the following:
  * Partitions vertex data into buffer 'batches' with a dynamic size, allowing for enormous vertex counts
