@@ -14,7 +14,12 @@ This program was written in C++ and OpenGL, and features the following:
  * Camera operating on spherical coordinates
  * Ability to alter isovalues, scalar field, and other parameters for marching cubes.
    * TO alter parameters, change MarchingCubes::init(...) call in main cpp, as well as 3 parameter general function to whatever surface you want:
-   * <image src = "info.png" width = "300px">
+   * <image src="res/info.png" width = "300px">
+ 
+ ## Controls
+ * <code>Mouse_Drag</code>: Move camera in 360 deg sphere
+ * <code>UP</code>: Change radius of camera (Bring closer)
+ * <code>DOWN</code>: Change radius of camera (Bring further)
  
  ## Stuff I learned (Future reference for me)
   1) VBOs have a finite size; better to split data than to compound it in one massive buffer.
