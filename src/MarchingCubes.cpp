@@ -268,11 +268,12 @@ void MarchingCubes::update() {
 
 void MarchingCubes::render(ShaderProgram& shader, glm::mat4 mvp) {
 
+	glUseProgram(shader.ID);
+	shader.setUniformMatrix4fv("mvp", mvp);
+	shader.setUniform3fv("modelColor", base_color);
+
 	// Draw each buffer that we are able
 	for (int i = 0; i < buffers.size(); i++) {
-		glUseProgram(shader.ID);
-		shader.setUniformMatrix4fv("mvp", mvp);
-		shader.setUniform3fv("modelColor", base_color);
 		glBindVertexArray(buffers[i].VAO);
 		glDrawArrays(GL_TRIANGLES, 0, buffers[i].vert_count);
 		glBindVertexArray(0);
